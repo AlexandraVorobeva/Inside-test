@@ -5,7 +5,7 @@ REST API application.<br>
 ### Stack of technologies:<br>
 -Python >= 3.9<br>
 -FastApi<br>
--Database: ????
+-Database: ????<br>
 -linter: Black<br>
 
 FastAPI is a modern, fast (high-performance), web framework for building APIs with Python.
