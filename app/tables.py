@@ -12,7 +12,7 @@ Base = declarative_base()
 
 
 class User(Base):
-    __tablename__ = 'users'
+    __tablename__ = "users"
 
     id = Column(Integer, primary_key=True)
     username = Column(String, unique=True)
@@ -20,10 +20,10 @@ class User(Base):
 
 
 class Message(Base):
-    __tablename__ = 'messages'
+    __tablename__ = "messages"
 
     id = Column(Integer, primary_key=True)
-    username = Column(String, ForeignKey('users.username'))
+    username = Column(String, ForeignKey("users.username"))
     message = Column(String, nullable=True)
 
-    user = relationship('User', backref='operations')
+    user = relationship("User", backref="users")
