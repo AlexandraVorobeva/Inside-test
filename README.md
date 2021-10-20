@@ -5,7 +5,7 @@ REST API application.<br>
 ### Stack of technologies:<br>
 -Python >= 3.9<br>
 -FastApi<br>
--Database: ????<br>
+-Database: SQLite<br>
 -linter: Black<br>
 
 FastAPI is a modern, fast (high-performance), web framework for building APIs with Python.
@@ -40,15 +40,9 @@ $ source venv/bin/activate<br>
 ### Dependency:
 $ pip install -r requirements.txt<br>
 
-### Run your databese on localhost in Docker:
-
-$ docker run -d -p 27017:27017 mongo
-
 ### Run the sample server:<br>
-$ uvicorn app.app:app --reload <br>
+$ uvicorn app.main:app --reload <br>
 
-### Run tests:<br>
-$ pytest<br>
 
 
 ### API from the browser:
@@ -58,10 +52,8 @@ http://127.0.0.1:8000/docs <br>
 
 
 ### Examples:<br>
-$ http://127.0.0.1:8000/products/all    list of all products <br> ??????
-$ 
 
-![Screenshot]() <br> ?????
-
+![Screenshot](https://github.com/SparklingAcidity/Inside-test/blob/main/im_for_readme/1.png) <br>
+![Screenshot](https://github.com/SparklingAcidity/Inside-test/blob/main/im_for_readme/2.png)<br><br>
 or http://127.0.0.1:8000/redoc
-![Screenshot]()
+![Screenshot](https://github.com/SparklingAcidity/Inside-test/blob/main/im_for_readme/3.png)
